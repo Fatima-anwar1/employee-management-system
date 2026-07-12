@@ -8,6 +8,10 @@
 //import Footer from './components/footer'; // Footer bhi add karlo
 import {useState, useEffect} from "react"
 
+// Yahan interface define karein
+interface Product {
+  title: string;
+}
 
  function App() {
 
@@ -24,7 +28,7 @@ import {useState, useEffect} from "react"
     title:"product no 3"
   }]
   
-const[product , setProduct] = useState([])
+const[product , setProduct] = useState<Product[]> ([])
 
   useEffect(() => {
      setProduct(data)
