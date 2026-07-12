@@ -1,0 +1,163 @@
+.ems-app {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: #f4f6f8;
+  color: #1f2937;
+  min-height: 100vh;
+}
+
+.ems-header {
+  background: #1e293b;
+  color: white;
+  padding: 24px 40px;
+}
+
+.ems-header h1 {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.ems-header p {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.ems-container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 800px) {
+  .ems-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.ems-form-card, .ems-list-card {
+  background: white;
+  border-radius: 10px;
+  padding: 22px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  height: fit-content;
+}
+
+.ems-form-card h2, .ems-list-card h2 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: #1e293b;
+}
+
+.ems-form-group {
+  margin-bottom: 14px;
+}
+
+.ems-form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #475569;
+}
+
+.ems-form-group input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.ems-form-group input:focus {
+  border-color: #2563eb;
+}
+
+.ems-form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.ems-btn-primary, .ems-btn-secondary, .ems-btn-edit, .ems-btn-delete {
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ems-btn-primary {
+  background: #2563eb;
+  color: white;
+  flex: 1;
+}
+
+.ems-btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.ems-btn-secondary {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.ems-btn-secondary:hover {
+  background: #d1d5db;
+}
+
+.ems-empty-state {
+  color: #94a3b8;
+  font-size: 14px;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.ems-table-wrapper {
+  overflow-x: auto;
+}
+
+.ems-table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ems-table-wrapper th, .ems-table-wrapper td {
+  text-align: left;
+  padding: 12px 10px;
+  font-size: 14px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.ems-table-wrapper th {
+  color: #64748b;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.ems-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.ems-btn-edit {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.ems-btn-edit:hover {
+  background: #fde68a;
+}
+
+.ems-btn-delete {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.ems-btn-delete:hover {
+  background: #fecaca;
+}
